@@ -1,0 +1,10 @@
+#Exercise 1
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+next_tenth = ((age + 10) // 10 * 10)
+difference = next_tenth - age
+if difference == 1:
+    print("{}, in {} year you will be {}!".format(name, difference, next_tenth))
+else:
+    print("{}, in {} years you will be {}!".format(name, difference, next_tenth))

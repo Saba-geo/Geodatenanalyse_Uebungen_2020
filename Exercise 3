@@ -1,0 +1,11 @@
+#Exercise 3
+
+from random import randint
+n = randint(1, 100)
+while True:
+    i = int(input("What number from 1-100 have I chosen?: "))
+    if i == n:
+        print("Yeeess correct, I was thinking of {}!".format(n))
+        break # if that condition is reached, the code stops
+    if i < n: print("Nope, too low, guess again!")
+    if i > n: print("Waaay too high, you can do better!")
